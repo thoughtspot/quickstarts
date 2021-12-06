@@ -1,0 +1,28 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-12-06T09:22:03-08:00",
+  "id": "0001",
+  "duration": 137,
+  "title": "Build ReactJS app with ThoughtSpot and Snowflake",
+  "summary": "Build React.js app with Snowflake and ThoughtSpot",
+  "source": "README.md",
+  "theme": "",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "sdk",
+    "snowflake",
+    "javascript",
+    "thoughtspot"
+  ],
+  "tags": [
+    "js"
+  ],
+  "feedback": "github.com/thoughtspot/quickstarts",
+  "ga": "0",
+  "url": "0001"
+}

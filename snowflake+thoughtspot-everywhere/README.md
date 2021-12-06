@@ -1,16 +1,26 @@
-# Introduction
+author: Quinton Wall
+summary: Build React.js app with Snowflake and ThoughtSpot
+id: 0001
+categories: sdk, snowflake, javascript, thoughtspot
+environments: js
+status: draft
+feedback link: github.com/thoughtspot/quickstarts
+analytics account: 0
+
+# Build ReactJS app with ThoughtSpot and Snowflake
 
 With massive amounts of data being generated every day, it is no surprise that the need to store and make sense of all this data is critical to business success. To store data, Snowflake has emerged as one of the leading Cloud Data Platforms for its ease of setup, maintenance and speed. Alongside Snowflake, ThoughtSpot follows a similar mentality of ease of use with powerful AI-based search and analytics tools. This tutorial will teach you how to use ThoughtSpot to connect to Snowflake and, using the ThoughtSpot Everywhere developer tools, add insights into a React-based web app. 
 
 Whilst we are using React for this tutorial, similar techniques can be used to add ThoughtSpot to any app, regardless of platform, thanks to the open API approach ThoughtSpot delivers. You can use scalable RESTful APIs or SDKs in major programming languages. The choice is yours.
 
 
-# Getting Started
+## Getting Started
+Duration: 0:10:00
 
 To get started, we are going to need a few cloud environments, one for Snowflake and another for ThoughtSpot. Thankfully, both platforms offer free trials you can sign up for online. This tutorial will use sample datasets in each environment. If you already have an existing Snowflake or ThoughtSpot instance, it is recommended to create a new free trial instance. 
 
 
-## Sign up for a Snowflake Free Trial
+### Sign up for a Snowflake Free Trial
 
 Jump over to the [Snowflake Free Trial signup page](https://signup.snowflake.com/?utm_source=tsquickstart), enter the details required, and tap continue. Follow the steps required and check your email for an Activation link. Once you are logged in, tap on the Worksheets icon and click the + tag to create a new worksheet. Go ahead and name it Snowflake+ThoughtSpot Tutorial.
 
@@ -99,13 +109,14 @@ That’s it. You’ve set up your Snowflake instance. Throughout the tutorial we
 
 
 
-## Sign up for a ThoughtSpot Free Trial
+### Sign up for a ThoughtSpot Free Trial
 
 Next, let’s sign-up for a ThoughtSpot Free Trial. Head over to the [sign-up page](https://www.thoughtspot.com/trial?utm=snowtstutorial) and complete the required fields. Select Snowflake as your Cloud Data Warehouse provider. This is not necessary, but does help us better understand trends in customer data usage. If you have already signed up with ThoughtSpot previously, but want to use the same email address, you can add a +1 to your email name, and still have it registered to your existing email. For example, let’s say I previously signed up with my work email address of [quinton.wall@acmecorp.com](mailto:quinton.wall@acmecorp.com). I could use [quinton.wall+1@acmecorp.com](mailto:quinton.wall+1@acmecorp.com) to satisfy the sign-up requirements and receive activation emails to my original email address. 
 
 In a few minutes you should receive an activation email. Follow the instructions included to finish creating your Trial account. 
 
-# Create A Connection
+## Create A Connection
+Duration: 0:10:00
 
 Now that we have our cloud environments setup, it is time to create the connection from ThoughtSpot to Snowflake. If you haven’t done so already, go ahead and log into your ThoughtSpot account. From the top menu, select **Data**, then **Connections** from the left hand menu, tap **Snowflake**, give your connection the name `TutorialSnowStore`, and tap continue. 
 
@@ -256,6 +267,7 @@ Once you have selected all the appropriate fields, tap Create Connection. To con
 
 
 ## Model the Data
+Duration: 0:10:00
 
 Now that we have the connection to Snowflake completed, it is time to model the data. Data modeling in ThoughtSpot is similar to how you would go about it in a traditional database. We want to establish relationships between data, the joins, and create some sort of view to make it easier for users to work with the data. Within ThoughtSpot, a view is called a `Worksheet`. Don’t get confused with Snowflake’s definition of worksheets. They are different. If you are more familiar with databases, just remember that a Worksheet in ThoughtSpot is similar to a materialized view in a database. Let’s start by creating ours. 
 
@@ -279,12 +291,8 @@ Once you are done, you should see a final configuration like this, with a handy 
 
 
 
-
-
-# Create the Worksheet
-
-
-## Using the Visual Designer
+## Create Worksheet with the Visual Designer
+Duration: 0:10:00
 
 Now, it is time to create the worksheet that user’s will interact with. Just remember, a worksheet in ThoughtSpot functions very similar to a database view. The good news is that now that we have our modeling complete, creating a Worksheet is really simple. From the top navigation, select **Data**, then **Worksheets**, and finally **New Worksheet**. Select the three tables from Snowflake, using the **Filter by name** box to quickly locate the tables we need. Once select, tap **Close.**
 
@@ -297,7 +305,8 @@ With the tables selected, we can create the worksheet by expanding the **Sources
 
 
 
-## Using SQL
+## Create Worksheet using Data Workspace
+Duration: 0:10:00
 
 So far we have used the visual designers to create an answer. If you are more familiar with, or have an existing, SQL statement, you can also use this to create a Worksheet using the new SQL based view feature currently available in Beta. To do, select SQL based view from the Data tab, and choose the TutorialSnowStore connection. 
 
@@ -324,7 +333,8 @@ Go ahead and run the statement to see the results. From here, give your Workshee
 
 
 
-# Visualize the Data with Liveboards
+## Visualize the Data with Liveboards
+Duration: 0:10:00
 
 For many users, viewing data in charts is the most efficient way of analysing data. The trouble with most charting solutions is that the results is very static. Consider a traditional dashboard to view daily sales. Charts on these dashboards are effectively pre-defined queries. With ThoughtSpot however, charts and dashboards are fully dynamic; they are alive. You can modify the filters with natural language, tap and drill in to view deeper insights, and more. For this tutorial, we are going to create a Liveboard, a dynamic dashboard, to represent product sales by store.  Let’s get started.
 
@@ -336,7 +346,7 @@ From the top navigation, select **Liveboards**, then tap the **+Liveboard** butt
 
 
 
-## Add a Stacked Column Chart
+### Add a Stacked Column Chart
 
 Our Liveboard isn’t terribly exciting right now. We can fix that easily by creating an Answer and a Chart to represent the results. You can think of an Answer as just that, an answer to a question about data. For our tutorial, this question is “show me all the product sales for all stores”. The ThoughtSpot platform let’s you pose this question using natural language. But don’t worry, if you prefer to use SQL, you can do that too. We will get to that in a moment. Right now, we will use the ThoughtSpot platform to do the work for us. 
 
@@ -366,14 +376,15 @@ At first, the chart layout isn't exactly what we are looking for. Tap the **Cog*
 
 
 
-# Embed Analytics with ThoughtSpot Everywhere
+## Embed Analytics with ThoughtSpot Everywhere
+Duration: 0:15:00
 
 One of the major benefits of the ThoughtSpot Platform is the ability to a spectrum of development processes. So far during this tutorial we have utilized the visual tools. Now it is time to write some code. ThoughtSpot provides a complete set of RESTful APIs, and SDKs to allow you to embed analytics into any application. Collectively, these developer tools are called ThoughtSpot Everywhere.
 
 For this tutorial weThoughtSpot Everywhere Visual Embed SDK to take the Liveboard we just created and embed it into a REACT-based web application. This is a very typical scenario where a business may have an existing portal employees or customers use to track orders, sales, or whatever they need. With ThoughtSpot Everywhere, adding analytics is incredibly easy. Let’s get started.
 
 
-## Set up your Local Development Environment
+### Set up your Local Development Environment
 
 We are going to use React to build our web application. Installing and configuring React, and it’s dependencies is different for each environment. This tutorial will use Mac OS as the example development environment. You can find steps to install React for Windows [here](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/react-on-windows). For the Mac, you will need the following:
 
@@ -402,13 +413,13 @@ $ npm -v$create-react-app — version
 
 
 
-### VSCode
+###  VSCode
 
 Whilst not required, a good IDE is certainly a productivity booster for many developers. Everyone has their own preference. Feel free to use your IDE of choice. For the examples within this tutorial, we will use VSCode. If you like it, you can [download it for free](https://code.visualstudio.com/download) for your preferred platform. 
 
 
 ## Create the React webapp
-
+Duration: 0:20:00
 
 ### Step 1: Create app
 
@@ -724,7 +735,8 @@ export default App;
 
 
 
-### Step 7: Run the app
+## Run the app
+Duration: 0:05:00
 
 It’s time to test your app out. From the terminal, execute the following command from within your app directory
 
@@ -762,6 +774,7 @@ $snowsales-app> npm install
 
 
 ## Use the Developer Playground
+Duration: 0:10:00
 
 With our basic app up and running, it is time to start adding ThoughtSpot components to it. Similar to when we created our Worksheet, the ThoughtSpot platform gives developers the freedom to choose how they work. Many like to jump in and write all the code, while others may want to use a visual tool to iterate and experiment. ThoughtSpot provides a really handy Developer Playground for iterating and experimenting with embedded components. We are going to use the Playground to generate a lot of the boilerplate code we need, then when everything is configured correctly, we will jump into some more fine tuning. This hybrid approach to developing with ThoughtSpot is a great way to quickly create your app without having to spend a lot of time searching documentation for all the parameters and configurations you need.
 
@@ -787,6 +800,7 @@ Information: Pinboards have recently been replaced by Liveboards. This change is
 
 
 ## Add ThoughtSpot React Components
+Duration: 0:15:00
 
 Now that we have our app structure, and have played with configurations through the Playground, let’s go ahead and add the ThoughtSpot Everywhere Embed SDK. This SDK gives you access to the ThoughtSpot Everywhere platform components such as Liveboards, Visualizations, and Search. We will be using the Liveboard component in this tutorial. Change directory to `snowsales-app`, then enter the following command:
 
@@ -848,6 +862,7 @@ Save your changes, and run your app. Tap on the hamburger icon, then Store Sales
 
 
 ## Adding Additional Live Components
+Duration: 0:10:00
 
 So far we have embedded a Liveboard into our React app. You can also embed Search, other Visualization components, or even the full ThoughtSpot app, just as easily. To demonstrate, we will create a new page and add the full app using a React component.
 
@@ -942,6 +957,7 @@ That’s it. Go ahead and run the app, navigate to the Full App page, and check 
 
 
 
-# Summary
+## Summary
+Duration: 0:02:00
 
 During this tutorial you created an app which utilizes two fundamental components of the Modern Data Stack: a cloud data platform with Snowflake, and an Analytics platform with ThoughtSpot. What’s more, you combined both platforms and embedded the insights into a React-based application using ThoughtSpot Everywhere. We only demonstrated a small portion of what’s possible, whether it is embedding other ThoughtSpot components like Search, or even the full ThoughtSpot experience, or leveraging the powerful APIs for sharing and interrogating data. You can download the complete app to jumpstart your own app development. If you want to learn more about how you can take advantage of everything you can do with ThoughtSpot, check out [developers.thoughtspot.com](developers.thoughtspot.com). 
