@@ -1,5 +1,5 @@
 # quickstarts
 
-Source material for [https://developers.thoughtspot.com/getstart](ThoughtSpot Developer Tutorials). 
+Source material for [ThoughtSpot Developer Tutorials](https://developers.thoughtspot.com/getstarted). 
 
 We :heart:  pull requests.
