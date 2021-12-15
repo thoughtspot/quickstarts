@@ -955,9 +955,64 @@ That’s it. Go ahead and run the app, navigate to the Full App page, and check 
 
 ![alt_text](images/image14.png "image_tooltip")
 
+## Devops and Platform APIs
+Duration: 0:15:00
+
+For many organizations, the next step before putting an app into production is determining how their solution will fit into existing devops toolchains such as source control or continuous integration. The ThoughtSpot Platform provides a [robust suite of APIs](https://developers.thoughtspot.com/docs/?pageid=rest-api-reference) for working with all aspects of the platform, whether you want to search or share data, add/remove users and groups, or manage configurations via metadata. For this tutorial, we will use the metadata API to create a simple devops process which takes a configuration, the liveboard we created previously, export it to your local system to allow you to add to a source control system like GitHub, then make a small change and push back to ThoughtSpot to simulate pushing to another environment such as staging or production. 
+
+### Step 1: Postman Setup
+To simplify working with the ThoughtSpot APIs, we are going to use Postman and import a few pre-configured endpoints. Postman is great for testing and managing your API calls before adding to existing devops scripts or tools. Start by [downloading Postman](https://www.postman.com/). 
+
+
+Once installed, tap on Environments and add the following three variables. 
+<table>
+  <tr>
+   <td><strong>Variable</strong>
+   </td>
+   <td><strong>Description</strong>
+   </td>
+  </tr>
+  <tr>
+  <td>domain</td><td>This is the url of the ThoughtSpot Cloud instance you are connecting to. For free trial, use https://try.thoughtspot.cloud/callosum/v1</td>
+  </tr>
+   <td>username</td><td>The username you signed up for ThoughtSpot with</td>
+   </tr>
+   <tr>
+   <td>username</td><td>The username you signed up for ThoughtSpot with</td>
+  </tr>
+  <tr>
+
+  </tr>
+  </table>
+
+  Negative
+  : Any time you make changes to these environment variables make sure you remember to tap Save. Only after tapping Save will your changes propagate to the rest of your Postman configurations.  
+
+  Next, download this collection from GitHub. This collection contains a number of pre-configured API endpoints which we will use in the tutorial. You can use this collection as the start point for your own projects, adding endpoints as you need them. If you do, please consider creating a [pull request](https://github.com/thoughtspot/ts_everywhere_resources/pulls) to help create a collection which covers every ThoughtSpot API endpoint. Once downloaded, tap on Collections > import and select the file. At this point your Postman is configured and we are ready to go. 
+
+  ### Step 2: Fetch Liveboard Id
+  We've already seen how to get a component id using the Developer Playground. You can also retrieve this metadata information directly from the API. Within the Collection, select Login, then tap Send. All going well, you should see successful response message. If you are interested, you can tap on the Body tap to see how the login parameters are configured within the API call. 
+
+  ![Successful Postman login](images/postman-login.gif "image_tooltip")
+
+  Now that we are logged in, select Metadata - List and tap Send. This endpoint will is configured with the parameter type=PINBOARD_ANSWER_BOOK to return Liveboard components. The result of this call is a JSON payload containing the metadata descriptions of any Liveboards in your instance. Scroll down until you find the Liveboard with the title **Country Level Stats** and copy the id.
+
+  ![Metadata List](images/metadata-list.png "image_tooltip")
+
+  ### Step 3: Fetch Liveboard metadata
+  Select the connection **TML - Export**, tap **Body** and change the id value for `export_ids` to be the id you just copied from the step above. Be careful to keep the double quotes in place. `export_ids` is an array that can take multiple ids at a time, separated by a comma. Save your changes and tap **Send**. If successful, you will see large response payload. If not selected already, you can change how you view the results by changing the selector to formatted. This makes it much easier to work with response data. If your data looks correct, tap **Save to file** and choose a location on your computer. At this point, you can add this file to source control like any other asset. 
+
+  ### Step 4: Import changes
+  Let's say that you organization has a devops process that pushes changes from a staging environment to production. The metadata we just exported could have come from this staging environment. Now it is time to load that into the next environment using the TML import API. This API supports three different import policies: VALIDATE, ALL_OR_NOTHING, and PARTIAL. Since we are only importing one file, we can use ALL_OR_NOTHING. 
+
+  To import metadata you pass in an array of json definitions. These definitions come from the TML export we used previously. To save some time, the Postman collection includes the metadata of the **Country Level Stats** liveboard already configured in the `import_objects` body element. To make this work for your environment, go ahead and delete the contents leaving only the `[""]`. Next, you will take the contents of the json export from the step above and paste this in between the quotes, starting from the `guid` element. Then, change the title of your Liveboard to "City Stats New", and save. Tap Send to push your changes back into your ThoughtSpot instance.
+
+ ![Metadata Import](images/matadata-import.png "image_tooltip") 
+
+  That's it. You just exported a ThoughtSpot Liveboard to add to version control, made a change and pushed it back into the cloud. Getting familar with the APIs is a critical steps for managing your ThoughtSpot instance. 
 
 
 ## Summary
 Duration: 0:02:00
 
-During this tutorial you created an app which utilizes two fundamental components of the Modern Data Stack: a cloud data platform with Snowflake, and an Analytics platform with ThoughtSpot. What’s more, you combined both platforms and embedded the insights into a React-based application using ThoughtSpot Everywhere. We only demonstrated a small portion of what’s possible, whether it is embedding other ThoughtSpot components like Search, or even the full ThoughtSpot experience, or leveraging the powerful APIs for sharing and interrogating data. You can download the complete app to jumpstart your own app development. If you want to learn more about how you can take advantage of everything you can do with ThoughtSpot, check out [developers.thoughtspot.com](developers.thoughtspot.com). 
+During this tutorial you created an app which utilizes two fundamental components of the Modern Data Stack: a cloud data platform with Snowflake, and an Analytics platform with ThoughtSpot. What’s more, you combined both platforms and embedded the insights into a React-based application using ThoughtSpot Everywhere, and created a simple devops procesing using the platform APIs. We only demonstrated a small portion of what’s possible with ThoughtSpot. If you want to learn more about how you can take advantage of everything you can do with ThoughtSpot, check out [developers.thoughtspot.com](developers.thoughtspot.com). 
