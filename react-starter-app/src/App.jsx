@@ -6,9 +6,25 @@ import Liveboard from './components/liveboard'
 import FullApp from './components/fullapp'
 import About from './components/about';
 
+// ThoughtSpot
+import {
+  AuthType,
+  init,
+ } from "@thoughtspot/visual-embed-sdk";
+ 
+ const TSURL = "https://try.thoughtspot.cloud";
+
+
 function App() {
+
+  init({
+    thoughtSpotHost: TSURL,
+    authType: AuthType.None
+  });
+
  return (
    <div className="App">
+     
      <header>
        <BurgerMenu/> 
      </header>
