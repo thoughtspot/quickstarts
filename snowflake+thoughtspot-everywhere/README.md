@@ -559,11 +559,11 @@ Copy the following code into the relevant subpages. We will add more to these pa
 
 ### Step 5: Add a hamburger menu
 
-Currently, our app isn’t very useful. There is no navigation. Let’s go ahead and fix that by adding a hamburger menu using [react-hamburger-menu](https://github.com/negomi/react-burger-menu). Add it to your project:
+Currently, our app isn’t very useful. There is no navigation. Let’s go ahead and fix that by adding a hamburger menu using [react-burger-menu](https://github.com/negomi/react-burger-menu). Add it to your project:
 
 
 ```
-$snowsales-app> npm add react-hamburger-menu
+$snowsales-app> npm add react-burger-menu
 ```
 
 

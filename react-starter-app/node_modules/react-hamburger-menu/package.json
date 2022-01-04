@@ -1,0 +1,52 @@
+{
+  "name": "react-hamburger-menu",
+  "version": "1.2.1",
+  "description": "Dead simple Hamburger Menu to use as a mobile nav, with a bunch of styling options.",
+  "main": "dist/HamburgerMenu.js",
+  "keywords": [
+    "react",
+    "react-component",
+    "menu",
+    "hamburger",
+    "ui-component",
+    "navigation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cameronbourke/react-hamburger-menu.git"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --content-base example/",
+    "build:compile": "babel src --out-dir dist",
+    "build:umd": "webpack",
+    "build:example": "webpack --config ./example/webpack.config.js --progress --colors",
+    "build:all": "yarn run build:compile && yarn run build:umd && yarn run build:example"
+  },
+  "author": "Cameron Bourke <cameron2295@gmail.com> (http://cameronbourke.com/)",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/preset-react": "^7.0.0-beta.40",
+    "babel-loader": "8.0.0-beta.0",
+    "babel-register": "^6.26.0",
+    "expect": "1.13.4",
+    "np": "6.2.0",
+    "prop-types": "15.5.7",
+    "react": "15.3.0",
+    "react-dom": "15.3.0",
+    "tap-spec": "4.1.1",
+    "tape": "4.4.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "peerDependencies": {
+    "prop-types": ">=15.5.7",
+    "react": ">=15.3.0"
+  }
+}
