@@ -36,7 +36,7 @@ function App() {
        <Route path="/fullapp" element={<FullApp />} />
        <Route path="/about" element={<About />} />
      </Routes>
-
+  ThoughtSpot Everywhere Starter App. 
    </div>
  );
 }
