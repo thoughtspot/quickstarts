@@ -23,11 +23,7 @@ Change directories to `quickstarts/react-starter-app`
 
 ### Install dependencies
 
- `npm add react-router-dom@6`
-
- `npm add react-hamburger-menu`
-
- `npm add @thoughtspot/visual-embed-sdk`
+`npm install`
 
  ### Configure the app
 Each embedded component requires a unique identify to tell the Visual Embed SDK which ThoughtSpot component to render. The best way to retrieve the specific id is via the Developer Playground. Depending on which component you are using (Search, Liveboard), the id may be called something slightly different. Refer to the code samples in this project to see the specific names, then, within the Playground, retrieve the required value. For example, when using a Search component, the Visual Embed SDK requires a dataSource id, which can be retrieved by changing the data source [here](https://try-everywhere.thoughtspot.cloud/v2/#/everywhere/playground/search)
