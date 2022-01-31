@@ -8,6 +8,8 @@ It contains example code for:
 - embedding a liveboard component
 - embedding the full ThoughtSpot app
 
+If you want to see it in action, check out the [Code Sandbox version](https://codesandbox.io/s/github/thoughtspot/quickstarts/tree/main/react-starter-app).
+
 ## How to use
 
 ### Sign up for Free Trial account
