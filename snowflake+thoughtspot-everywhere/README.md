@@ -68,16 +68,14 @@ With massive amounts of data being generated every day, it is no surprise that t
 Whilst we are using React for this tutorial, similar techniques can be used to add ThoughtSpot to any app, regardless of platform, thanks to the open API approach ThoughtSpot delivers. You can use scalable RESTful APIs or SDKs in major programming languages. The choice is yours.
 
 
-# 
-Getting Started
+# Getting Started
 
 Duration: 0:10:00
 
 To get started, we are going to need a few cloud environments, one for Snowflake and another for ThoughtSpot. Thankfully, both platforms offer free trials you can sign up for online. This tutorial will use sample datasets in each environment. If you already have an existing Snowflake or ThoughtSpot instance, it is recommended to create a new free trial instance.
 
 
-## 
-Sign up for a Snowflake Free Trial
+## Sign up for a Snowflake Free Trial
 
 Jump over to the [Snowflake Free Trial signup page](https://signup.snowflake.com/?utm_source=tsquickstart), enter the details required, and tap continue. Follow the steps required and check your email for an Activation link. Once you are logged in, tap on the Worksheets icon and click the + tag to create a new worksheet. Go ahead and name it Snowflake+ThoughtSpot Tutorial.
 
@@ -170,14 +168,12 @@ That’s it. You’ve set up your Snowflake instance. Throughout the tutorial we
 
 
 
-## 
-Sign up for a ThoughtSpot Free Trial
+## Sign up for a ThoughtSpot Free Trial
 
 Next, let’s sign-up for a ThoughtSpot Free Trial. Head over to the [sign-up page](https://www.thoughtspot.com/trial?utm=snowtstutorial) and complete the required fields. Select Snowflake as your Cloud Data Warehouse provider. This is not necessary, but does help us better understand trends in customer data usage. In a few minutes you should receive an activation email. Follow the instructions included to finish creating your Trial account.
 
 
-# 
-Create A Connection
+# Create A Connection
 
 Duration: 0:10:00
 
@@ -281,8 +277,7 @@ Once you have selected all the appropriate fields, tap **Create Connection**. (I
 
 
 
-# 
-Model the Data
+# Model the Data
 
 Duration: 0:10:00
 
@@ -311,8 +306,7 @@ Before we can create our Worksheet, we need to create the joins between tables. 
  Since all the data relates to where a supplier is located, we will make a worksheet to simplify searching. 
 
 
-# 
-Create Worksheet with the Visual Designer
+# Create Worksheet with the Visual Designer
 
 Duration: 0:10:00
 
@@ -330,8 +324,7 @@ With the tables selected, we can create the worksheet by expanding the Sources t
 
 
 
-# 
-Create Worksheet using Data Workspace
+# Create Worksheet using Data Workspace
 
 Duration: 0:05:00
 
@@ -361,8 +354,7 @@ Go ahead and run the statement to see the results. From here, give your Workshee
 This hybrid approach to Worksheet creation works very well for the typical developer who is comfortable with typical sql, but may not be an expert in more advanced grouping, and functions. You can quickly create a worksheet from an existing SQL statement, then tweak the aggregate functions using the visual designer.
 
 
-# 
-Visualize the Data with Liveboards
+# Visualize the Data with Liveboards
 
 Duration: 0:10:00
 
@@ -375,8 +367,7 @@ From the top navigation, select Liveboards, then tap the +Liveboard button in th
 
 
 
-## 
-Add a Stacked Column Chart
+## Add a Stacked Column Chart
 
 Our Liveboard isn’t terribly exciting right now. We can fix that easily by creating an Answer and a Chart to represent the results. You can think of an Answer as just that, an answer to a question about data. For our tutorial, this question is _“show me all the suppliers in a particular nation”_. The ThoughtSpot platform let’s you pose this question using natural language. But don’t worry, if you prefer to use SQL, you can do that too. We will get to that in a moment. Right now, we will use the ThoughtSpot platform to do the work for us.
 
@@ -410,8 +401,7 @@ At first, the chart layout isn't exactly what we are looking for. We want to see
 
 
 
-# 
-Embed Analytics with ThoughtSpot Everywhere
+# Embed Analytics with ThoughtSpot Everywhere
 
 Duration: 0:15:00
 
@@ -420,20 +410,17 @@ One of the major benefits of the ThoughtSpot Platform is the ability to a spectr
 For this tutorial weThoughtSpot Everywhere Visual Embed SDK to take the Liveboard we just created and embed it into a REACT-based web application. This is a very typical scenario where a business may have an existing portal employees or customers use to track orders, sales, or whatever they need. With ThoughtSpot Everywhere, adding analytics is incredibly easy. Let’s get started.
 
 
-## 
-Set up your Local Development Environment
+## Set up your Local Development Environment
 
 We are going to use React to build our web application. Installing and configuring React, and it’s dependencies is different for each environment. This tutorial will use Mac OS as the example development environment. You can find steps to install React for Windows [here](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/react-on-windows). For the Mac, you will need the following:
 
 
-## 
-Node.js & NPM
+## Node.js & NPM
 
 NPM, is a very popular package management solution built with Node.js (thus the name, Node Package Manager). This tutorial will use NPM to install the React.js framework. Many Macs have Node and NPM already installed. You can check this by opening a terminal window and typing `$ node -v` If you do not see a successful response, go ahead and [download the installer](https://nodejs.org/en/download/) for your platform. (Please use the LTS version. Occasionally the latest release has minor bugs). Once downloaded, double-click and follow the prompts to install.
 
 
-## 
-React Framework
+## React Framework
 
 With NPM installed, installing the React Framework is simple. Enter the following command in your terminal window:
 
@@ -452,20 +439,17 @@ $ npm -v$create-react-app —version
 
 
 
-### 
-**VSCode**
+### VSCode
 
 Whilst not required, a good IDE is certainly a productivity booster for many developers. Everyone has their own preference. Feel free to use your IDE of choice. For the examples within this tutorial, we will use VSCode. If you like it, you can [download it for free](https://code.visualstudio.com/download) for your preferred platform.
 
 
-# 
-Create the React webapp
+# Create the React webapp
 
 Duration: 0:20:00
 
 
-## 
-Step 1: Create app
+## Step 1: Create app
 
 With your terminal window still open, let’s get started creating the React app. Enter the following command:
 
@@ -507,8 +491,7 @@ export default App;
 
 
 
-## 
-Step 2: Add sub-pages
+## Step 2: Add sub-pages
 
 Next, we are going to set up routing to support navigating through our app. We will be creating a multi-page page app, with separate pages designed to encapsulate different features of our app. Whether you decide to build a single page or multi-page app really comes down to personal preference.
 
@@ -524,8 +507,7 @@ Create a new folder Components in the src directory, then create 2 additional pa
 
 
 
-## 
-Step 3: Add Routing support to your project
+## Step 3: Add Routing support to your project
 
 From the terminal, make sure you `cd` into `snowsales-app` folder, then execute the following command.
 
@@ -564,8 +546,7 @@ import { Route, Routes} from "react-router-dom";
 
 
 
-## 
-Step 4: Configure the subpages
+## Step 4: Configure the subpages
 
 Copy the following code into the relevant subpages. We will add more to these pages later, but for now, we just want to get everything set up to support navigation
 
@@ -587,7 +568,7 @@ export default function StoreSales() {
 
 
 
-### about.jsx \
+### about.jsx 
 
 
 
@@ -605,8 +586,7 @@ export default function About() {
 
 
 
-## 
-Step 5: Add a hamburger menu
+## Step 5: Add a hamburger menu
 
 Currently, our app isn’t very useful. There is no navigation. Let’s go ahead and fix that by adding a hamburger menu using [react-burger-menu](https://github.com/negomi/react-burger-menu). Add it to your project:
 
@@ -626,8 +606,7 @@ Then, create a new folder, `Components`, with a subfolder, `Burger`, and two fil
 Then, add the following code:
 
 
-### 
-BurgerMenu.js
+### BurgerMenu.js
 
 
 ```
@@ -656,8 +635,7 @@ export default BurgerMenu;
 
 
 
-### 
-burger.css
+### burger.css
 
 
 ```
@@ -722,8 +700,7 @@ burger.css
 
 
 
-## 
-Step 6: Create route navigation
+## Step 6: Create route navigation
 
 All that is left for us to do is create the React routes, and add the Hamburger menu to our app. To finish wiring everything up, add the following imports to your App.jsx.
 
@@ -786,8 +763,7 @@ export default App;
 
 
 
-# 
-Run the app
+# Run the app
 
 Duration: 0:05:00
 
@@ -828,8 +804,7 @@ $snowsales-app> npm install
 
 
 
-# 
-Use the Developer Playground
+# Use the Developer Playground
 
 Duration: 0:10:00
 
@@ -855,8 +830,7 @@ Information: Pinboards have recently been replaced by Liveboards. This change is
 
 
 
-# 
-Add ThoughtSpot React Components
+# Add ThoughtSpot React Components
 
 Duration: 0:15:00
 
@@ -914,16 +888,14 @@ export default function StoreSales() {
 Save your changes, and run your app. Tap on the hamburger icon, then Store Sales. You will now be presented with a login to your ThoughtSpot instance. Enter your details, and the Liveboard shall be rendered within your app. Tap around and see how you can interact with the data. Cool huh?
 
 
-# 
-Adding Additional Live Components
+# Adding Additional Live Components
 
 Duration: 0:10:00
 
 So far we have embedded a Liveboard into our React app. You can also embed Search, other Visualization components, or even the full ThoughtSpot app, just as easily. To demonstrate, we will create a new page and add the full app using a React component.
 
 
-## 
-Step 1: Add fullapp.js
+## Step 1: Add fullapp.js
 
 Create a new file, `fullapp.js` in the Components folder of your project
 
@@ -940,8 +912,7 @@ export default function FullApp() {
 
 
 
-## 
-Step 2: Add Routes
+## Step 2: Add Routes
 
 Within App.jsx, add the import for fullapp.
 
@@ -965,8 +936,7 @@ Then, add the path to the Routes element
 
 
 
-## 
-Step 3: Add to the Burger Menu
+## Step 3: Add to the Burger Menu
 
 Now, add a link to `BurgerMenu.js` to allow users to navigate to the new page. Your links should now look like this.
 
@@ -986,8 +956,7 @@ Now, add a link to `BurgerMenu.js` to allow users to navigate to the new page. Y
 
 
 
-## 
-Step 4: Add Component
+## Step 4: Add Component
 
 Go ahead and replace the contents of fullapp.js with the following code.
 
@@ -1018,8 +987,7 @@ That’s it. Go ahead and run the app, navigate to the Full App page, and check 
 
 
 
-# 
-Summary
+# Summary
 
 Duration: 0:02:00
 
