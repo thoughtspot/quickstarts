@@ -285,7 +285,7 @@ Before we can create our Worksheet, we need to create the joins between tables. 
 
 
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/image5.gif "image_tooltip")
 
 
 
