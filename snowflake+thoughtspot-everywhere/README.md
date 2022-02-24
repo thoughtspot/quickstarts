@@ -740,7 +740,7 @@ If you remember from the Developer Playground, there were also a number of confi
 ```
 
            <SearchEmbed frameParams={{height: "80vw"}}
-                       collapseDataSources="true"
+                       collapseDataSources={true}
                        answerId={"YOUR-ANSWERID-HERE"}/>
  
 ```
