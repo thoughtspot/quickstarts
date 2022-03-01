@@ -195,7 +195,7 @@ Next, let’s add a Pie chart visualization. Tap the Chart icon on the right han
 
 Now things are starting to look good. Rename the search to “Top 10 Stores” by tapping on the current name.
 
-Go ahead and save this search and visualization by pinning it to a liveboard. To do so, tap the Pin button. You can think of a liveboard as a dynamic workspace similar to a traditional dashboard, but with a critical difference - your data is always live and you can drill into it at any time, analyzing it in any way to find the answers you want. Since this is your first time pinning, you will need to create a new Liveboard. Give it a name like “Starbucks Stores.”
+Go ahead and save this search and visualization.. You can save the search by tapping on the ellipsis and selecting Save.  by pinning it to a liveboard. Then, add it to a liveboard To do so, tap the Pin button. You can think of a liveboard as a dynamic workspace similar to a traditional dashboard, but with a critical difference - your data is always live and you can drill into it at any time, analyzing it in any way to find the answers you want. Since this is your first time pinning, you will need to create a new Liveboard. Give it a name like “Starbucks Stores.” It is important to save your search separately from adding to a pinboard. Only then, will you be able access this search by name in the Developer Playground, which we will use later.
 
 In this step, you have created your first answer. You can access this at any time via the Answers tab, or in the Liveboard you created. 
 
