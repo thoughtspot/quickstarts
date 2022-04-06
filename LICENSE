@@ -1,201 +1,41 @@
-                                 Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/
 
-   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+ThoughtSpot Development Tools End User License Agreement
 
-   1. Definitions.
+THIS THOUGHTSPOT DEVELOPMENT TOOLS END USER LICENSE AGREEMENT (“EULA”) FORMS A BINDING AGREEMENT BETWEEN YOU INDIVIDUALLY OR THE BUSINESS ENTITY OR PUBLIC AGENCY ON WHOSE BEHALF YOU ARE ACCEPTING THIS AGREEMENT (“COMPANY”) AND THOUGHTSPOT, INC. (“THOUGHTSPOT”). THIS EULA DESCRIBES THE RIGHTS AND OBLIGATIONS OF COMPANY AND THOUGHTSPOT GOVERNING THE USE OF ANY APPLICATION PROGRAMMING INTERFACE, CONNECTOR, SOFTWARE DEVELOPMENT KIT, CODE SNIPPET, SAMPLE CODE, FREE CUSTOM USER INTERFACE OR VISUALIZATION, SAMPLE DATA, AND THE CORRESPONDING DOCUMENTATION FOR EACH, ANY UPDATES AND UPGRADES THERETO, AND ANY MODIFICATIONS, ENHANCEMENTS, OR IMPROVEMENTS, OF ANY OF THE FOREGOING, MADE AVAILABLE BY THOUGHTSPOT TOGETHER WITH THIS EULA (EACH A “TOOL” AND COLLECTIVELY “TOOLS”).
 
-      "License" shall mean the terms and conditions for use, reproduction,
-      and distribution as defined by Sections 1 through 9 of this document.
+THIS EULA IS ACCEPTED BY: (1) INDICATING ACCEPTANCE OF THESE TERMS BY CLICKING “SUBMIT,” “ACCEPT” OR A SIMILAR BUTTON WHEN THIS EULA IS REFERENCED ON A WEB PAGE TO RECEIVE A TOOL; OR (2) DOWNLOADING, INSTALLING, OR USING, ANY PORTION OF THE TOOL. THE INDIVIDUAL ACCEPTING THIS AGREEMENT ON BEHALF OF COMPANY REPRESENTS AND WARRANTS THAT HE OR SHE: (A) IS AN EMPLOYEE, CONTRACTOR, OR AGENT OF, AND HAS THE AUTHORITY TO REPRESENT, COMPANY; AND (B) HAS READ AND UNDERSTANDS ALL THE PROVISIONS OF THIS AGREEMENT. IF COMPANY DOES NOT WISH TO ACCEPT THIS AGREEMENT, OR THE INDIVIDUAL ACCEPTING THE AGREEMENT DOES NOT HAVE AUTHORITY TO BIND COMPANY TO THIS AGREEMENT, THEN DO NOT CLICK OR SIGN TO ACCEPT THIS AGREEMENT, OR DOWNLOAD, INSTALL, OR USE, ANY TOOL.
 
-      "Licensor" shall mean the copyright owner or entity authorized by
-      the copyright owner that is granting the License.
+In the event of any conflict between the terms of this EULA and a signed agreement between Company and ThoughtSpot, the terms of the signed agreement will apply.
 
-      "Legal Entity" shall mean the union of the acting entity and all
-      other entities that control, are controlled by, or are under common
-      control with that entity. For the purposes of this definition,
-      "control" means (i) the power, direct or indirect, to cause the
-      direction or management of such entity, whether by contract or
-      otherwise, or (ii) ownership of fifty percent (50%) or more of the
-      outstanding shares, or (iii) beneficial ownership of such entity.
+ACKNOWLEDGMENT. ThoughtSpot provides the Tool to Company “as is” and “as available” and as an accommodation to Company to more quickly connect third-party software or services with, utilize sample data or code on, or utilize sample data sets or other materials with, the search and analytics ThoughtSpot Cloud subscription service or ThoughtSpot Application licensed software, to which Company must have purchased the necessary use rights pursuant to a separate purchase agreement (“Agreement”). ThoughtSpot may at any time remove Company’s access to any Tool or terminate the availability of a Tool without any liability to Company or any third party. In the event of termination, Company must remove and destroy all copies of the affected Tool, including all backup copies from all devices Company owns, possesses or controls and on which the Tool is installed.
 
-      "You" (or "Your") shall mean an individual or Legal Entity
-      exercising permissions granted by this License.
+LICENSE SCOPE. Subject to Company’s compliance with this EULA, ThoughtSpot hereby grants to Company a royalty-free, sub-licensable, transferable, non-exclusive, worldwide right and license to use, reproduce, display, perform, import and export, the Tool. The Tool is licensed, not sold.
 
-      "Source" form shall mean the preferred form for making modifications,
-      including but not limited to software source code, documentation
-      source, and configuration files.
+RESTRICTIONS. Company will not (and has no license to): (a) use the Tool except as permitted in this EULA; (b) sell, resell, license, sublicense, rent, lease, encumber, lend, distribute, transfer, or provide a third party with access to the Tool; (c) modify, or create derivative works of the Tool; (d) circumvent or remove by any means any click-accept or copy protection used by ThoughtSpot in connection with the Tool; (e) use the Tool to conduct competitive research, to develop a product that is competitive with any ThoughtSpot product offering, or otherwise if Company is a competitor to ThoughtSpot, or to assert, authorize, assist, or encourage a third-party to assert, against ThoughtSpot or any of its affiliates, customers, vendors, business partners, or licensors, any patent or other intellectual property claim regarding ThoughtSpot products or services; (f) publicly disseminate any performance or security vulnerability test (including a penetration test) results or analysis related to or derived from the Tool; (g) use the Tool to create a product that converts ThoughtSpot products’ file formats for use with data analysis, machine learning, or data visualization software that is not the property of ThoughtSpot; (h) use the Tool to access ThoughtSpot products in a manner not authorized by the Agreement or this EULA; (i) use the Tool in any manner that violates any applicable laws or regulations; or (j) to the extent that the Tool includes a third-party application programming interface, then Company will not modify, distribute, or use, the Tool with anything other than to connect the intended corresponding third-party technology to ThoughtSpot’s products. Company will not cause, encourage, or permit any other person or entity under its control from taking any actions that Company is prohibited from taking under this Agreement. Before Company engages in any of the foregoing acts that it believes it may be entitled to, it will provide ThoughtSpot with 30 days’ prior notice to legal@thoughtspot.com, and provide reasonably requested information to allow ThoughtSpot to assess Company’s claim. ThoughtSpot may, in its discretion, provide alternatives that reduce adverse impacts to ThoughtSpot’s intellectual property or other rights.
 
-      "Object" form shall mean any form resulting from mechanical
-      transformation or translation of a Source form, including but
-      not limited to compiled object code, generated documentation,
-      and conversions to other media types.
+OPEN SOURCE COMPONENTS. A Tool may include one or more open source software components provided under separate license terms which can be found in the open source disclosure file provided with or within a Tool download. Notwithstanding anything herein to the contrary, open source software is licensed to Company under such OSS’s own applicable license terms, which can be found in the attribution file. The open source license terms are consistent with the license granted in this EULA, and may contain additional rights benefiting Company. The open source license terms shall take precedence over this EULA to the extent that this EULA imposes greater restrictions on Company than the applicable open source license terms. To the extent the license for any open source software requires ThoughtSpot to make available to Company the corresponding source code and/or modifications, Company may obtain a copy of the applicable source files by sending a written request, with Company’s name and address to: ThoughtSpot, Inc., 910 Hermosa Court, Sunnyvale, California 94085, United States of America. All requests should clearly specify: Open Source Files Request, Attention: General Counsel. This offer to obtain a copy of such source files is valid for three years from the date Company acquired the applicable Tool.
 
-      "Work" shall mean the work of authorship, whether in Source or
-      Object form, made available under the License, as indicated by a
-      copyright notice that is included in or attached to the work
-      (an example is provided in the Appendix below).
+THIRD-PARTY COMPONENTS. In addition to open source components, a Tool may include one or more components licensed by a third party (a “Component”) (e.g., an application programming interface or a sample data set). To the extent that third-party license requirements apply to a third-party component in a Tool, such additional license terms will be provided in the open source disclosure file provided with or within a Tool download. Third-party license terms shall take precedence over this EULA to the extent that they impose additional restrictions or limitations on Company than the license provided herein for download and use of a Component. The parties agree that: (a) to the extent that the terms between Company and the third party for use of a third-party technology accessed by the Component are more restrictive, such terms shall apply to Company’s use of the Component; (b) ThoughtSpot, and not the third party, is responsible for the Component including, without limitation, for any warranties, maintenance, and support thereof, and the third party does not warrant the Component’s accuracy, reliability, completeness, usefulness, non-infringement, or quality of the Component, and will not be liable for any losses or damages of any kind, including lost profits or other indirect or consequential damages, relating to use of or reliance on the Component; and (c) the third party owns all right, title, and interest in and to the Component, including all intellectual property rights therein.
 
-      "Derivative Works" shall mean any work, whether in Source or Object
-      form, that is based on (or derived from) the Work and for which the
-      editorial revisions, annotations, elaborations, or other modifications
-      represent, as a whole, an original work of authorship. For the purposes
-      of this License, Derivative Works shall not include works that remain
-      separable from, or merely link (or bind by name) to the interfaces of,
-      the Work and Derivative Works thereof.
+DISCLAIMER OF WARRANTIES. THOUGHTSPOT DISCLAIMS RESPONSIBILITY FOR ANY HARM RESULTING FROM COMPANY’S USE OF THIS TOOL. THOUGHTSPOT DISCLAIMS TO THE FULLEST EXTENT PERMITTED, ALL GUARANTEES AND EXPRESS, IMPLIED AND STATUTORY WARRANTIES, INCLUDING WITHOUT LIMITATION THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT OF PROPRIETARY RIGHTS, AND ANY WARRANTIES REGARDING THE AVAILABILITY, SECURITY, RELIABILITY, TIMELINESS AND PERFORMANCE OF THIS TOOL. COMPANY DOWNLOADS AND USES THIS TOOL AT ITS OWN DISCRETION AND RISK, AND COMPANY IS SOLELY RESPONSIBLE FOR ANY DAMAGES TO ITS HARDWARE DEVICES OR LOSS OF DATA THAT RESULT FROM THE DOWNLOAD OR USE OF THIS TOOL.
 
-      "Contribution" shall mean any work of authorship, including
-      the original version of the Work and any modifications or additions
-      to that Work or Derivative Works thereof, that is intentionally
-      submitted to Licensor for inclusion in the Work by the copyright owner
-      or by an individual or Legal Entity authorized to submit on behalf of
-      the copyright owner. For the purposes of this definition, "submitted"
-      means any form of electronic, verbal, or written communication sent
-      to the Licensor or its representatives, including but not limited to
-      communication on electronic mailing lists, source code control systems,
-      and issue tracking systems that are managed by, or on behalf of, the
-      Licensor for the purpose of discussing and improving the Work, but
-      excluding communication that is conspicuously marked or otherwise
-      designated in writing by the copyright owner as "Not a Contribution."
+INTELLECTUAL PROPERTY. ThoughtSpot and its licensors own all right, title, and interest in and to this Tool, including all intellectual property or other proprietary rights worldwide therein, including patent, trademark, service mark, copyright, trade secret, know-how, moral right, and any other intellectual and intangible property rights, including all continuations, continuations in part, applications, renewals, and extensions of any of the foregoing, whether registered or unregistered. All rights not expressly granted herein are reserved. 
 
-      "Contributor" shall mean Licensor and any individual or Legal Entity
-      on behalf of whom a Contribution has been received by Licensor and
-      subsequently incorporated within the Work.
+INDEMNIFICATION. Company will indemnify and hold harmless ThoughtSpot from any claim made by any third party due to or arising directly or indirectly out of its conduct or any connection with its use of this Tool, violation of the terms herein, and any violation of any applicable law or regulation. ThoughtSpot reserves the right, at its own expense, to assume the exclusive defense and control of any manner subject to indemnification by Company, but doing so will not excuse Company’s indemnity obligations.
 
-   2. Grant of Copyright License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      copyright license to reproduce, prepare Derivative Works of,
-      publicly display, publicly perform, sublicense, and distribute the
-      Work and such Derivative Works in Source or Object form.
+LIMITATION OF LIABILITY. TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT WILL THOUGHTSPOT AND ITS LICENSORS BE LIABLE FOR ANY LOST PROFITS OR BUSINESS OPPORTUNITIES, LOSS OF USE, BUSINESS INTERRUPTION, LOSS OF DATA, OR ANY OTHER INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES UNDER ANY THEORY OF LIABILITY, WHETHER BASED IN CONTRACT, TORT, NEGLIGENCE, PRODUCT LIABILITY, OR OTHERWISE. BECAUSE SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE PRECEDING LIMITATION MAY NOT APPLY TO COMPANY. THOUGHTSPOT’S AND ITS LICENSORS’ LIABILITY UNDER THIS EULA WILL NOT, IN ANY EVENT, EXCEED $100 USD. THE FOREGOING LIMITATIONS SHALL APPLY REGARDLESS OF WHETHER THOUGHTSPOT OR ITS LICENSORS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND REGARDLESS OF WHETHER ANY REMEDY FAILS OF ITS ESSENTIAL PURPOSE.
 
-   3. Grant of Patent License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      (except as stated in this section) patent license to make, have made,
-      use, offer to sell, sell, import, and otherwise transfer the Work,
-      where such license applies only to those patent claims licensable
-      by such Contributor that are necessarily infringed by their
-      Contribution(s) alone or by combination of their Contribution(s)
-      with the Work to which such Contribution(s) was submitted. If You
-      institute patent litigation against any entity (including a
-      cross-claim or counterclaim in a lawsuit) alleging that the Work
-      or a Contribution incorporated within the Work constitutes direct
-      or contributory patent infringement, then any patent licenses
-      granted to You under this License for that Work shall terminate
-      as of the date such litigation is filed.
+LEGAL COMPLIANCE. A Tool may be subject to United States export control regulations. Without prior authorization from the United States government, Company shall not use the Tool for, and shall not permit the Tool to be used for, any purposes prohibited by United States law, including, without limitation, for any prohibited development, design, manufacture or production of missiles or nuclear, chemical or biological weapons. Without limiting the foregoing, Company represents and warrants that: (a) Company is not, and is not acting on behalf of, any person who is a citizen, national, or resident of, or who is controlled by the government of, Cuba, Iran, North Korea, Sudan, or Syria, the Crimea Region, or any other country to which the United States has prohibited export transactions; (b) Company is not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a “terrorist supporting” country; and (c) Company is not, and is not acting on behalf of, any person or entity listed on the U.S. Treasury Department list of Specially Designated Nationals and Blocked Persons, or the U.S. Commerce Department Denied Persons List, Unverified List, or Entity List or any other U.S. Government list of prohibited or restricted parties unless authorized by license or regulation. In addition, Company is responsible for complying with any local Law that may impact Company’s right to import, export, or use the Tool.
 
-   4. Redistribution. You may reproduce and distribute copies of the
-      Work or Derivative Works thereof in any medium, with or without
-      modifications, and in Source or Object form, provided that You
-      meet the following conditions:
+U.S. GOVERNMENT USE. If a Tool provided under this Agreement is software, then it is commercial computer software developed exclusively at private expense. Unless otherwise set forth in this Agreement, use, duplication, and disclosure by civilian agencies of the U.S. Government will not exceed those minimum rights set forth in FAR 52.227-19(c) or successor regulations. Use, duplication, and disclosure by U.S. Department of Defense agencies is subject solely to the license terms contained in this EULA, as stated in DFARS 227.7202 or successor regulations. U.S. Government rights will apply only to the specific agency and program for which the Application is obtained.
 
-      (a) You must give any other recipients of the Work or
-          Derivative Works a copy of this License; and
+SUPPORT. If Company has a support question regarding a Tool, use ThoughtSpot’s standard support process applicable to Company’s access to ThoughtSpot Cloud or license to the ThoughtSpot Application to receive assistance.
 
-      (b) You must cause any modified files to carry prominent notices
-          stating that You changed the files; and
+COMPLAINTS. Company agrees to direct any questions, complaints, or claims, with respect to the Tools to legal@thoughtspot.com.
 
-      (c) You must retain, in the Source form of any Derivative Works
-          that You distribute, all copyright, patent, trademark, and
-          attribution notices from the Source form of the Work,
-          excluding those notices that do not pertain to any part of
-          the Derivative Works; and
+CONTRACTING PARTIES. The contracting party is ThoughtSpot, Inc., 910 Hermosa Court, Sunnyvale, California 94085, the United States of America. This EULA is governed by the laws of the State of California, United States of America, unless mandated by other law. The United Nations Convention for the International Sale of Goods shall not apply.
 
-      (d) If the Work includes a "NOTICE" text file as part of its
-          distribution, then any Derivative Works that You distribute must
-          include a readable copy of the attribution notices contained
-          within such NOTICE file, excluding those notices that do not
-          pertain to any part of the Derivative Works, in at least one
-          of the following places: within a NOTICE text file distributed
-          as part of the Derivative Works; within the Source form or
-          documentation, if provided along with the Derivative Works; or,
-          within a display generated by the Derivative Works, if and
-          wherever such third-party notices normally appear. The contents
-          of the NOTICE file are for informational purposes only and
-          do not modify the License. You may add Your own attribution
-          notices within Derivative Works that You distribute, alongside
-          or as an addendum to the NOTICE text from the Work, provided
-          that such additional attribution notices cannot be construed
-          as modifying the License.
+ENTIRE AGREEMENT. This EULA represents the entire agreement between the parties with respect to the Tool, and supersedes any prior or contemporaneous oral or written agreements concerning the subject matter contained herein.
 
-      You may add Your own copyright statement to Your modifications and
-      may provide additional or different license terms and conditions
-      for use, reproduction, or distribution of Your modifications, or
-      for any such Derivative Works as a whole, provided Your use,
-      reproduction, and distribution of the Work otherwise complies with
-      the conditions stated in this License.
+INTERPRETATION. No failure of either party to exercise or enforce any of its rights under this EULA will act as a waiver of those rights. This EULA may only be modified, or any rights under it waived, by a written agreement executed by the party against which it is asserted. If any provision of this EULA is found illegal or unenforceable, it will be enforced to the maximum extent permissible, and the legality and enforceability of the other provisions of this EULA will not be affected. Any translation of this EULA is done for local requirements and in the event of a dispute between the English and any non-English version, the English version of this EULA shall govern. If Company is located in the province of Quebec, Canada, the following clause applies: The parties hereby confirm that Company has requested this EULA and all related documents be drafted in English. Les parties ont exige que le present contrat et tous les documents connexes soient rediges en anglais.
 
-   5. Submission of Contributions. Unless You explicitly state otherwise,
-      any Contribution intentionally submitted for inclusion in the Work
-      by You to the Licensor shall be under the terms and conditions of
-      this License, without any additional terms or conditions.
-      Notwithstanding the above, nothing herein shall supersede or modify
-      the terms of any separate license agreement you may have executed
-      with Licensor regarding such Contributions.
-
-   6. Trademarks. This License does not grant permission to use the trade
-      names, trademarks, service marks, or product names of the Licensor,
-      except as required for reasonable and customary use in describing the
-      origin of the Work and reproducing the content of the NOTICE file.
-
-   7. Disclaimer of Warranty. Unless required by applicable law or
-      agreed to in writing, Licensor provides the Work (and each
-      Contributor provides its Contributions) on an "AS IS" BASIS,
-      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-      implied, including, without limitation, any warranties or conditions
-      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
-      PARTICULAR PURPOSE. You are solely responsible for determining the
-      appropriateness of using or redistributing the Work and assume any
-      risks associated with Your exercise of permissions under this License.
-
-   8. Limitation of Liability. In no event and under no legal theory,
-      whether in tort (including negligence), contract, or otherwise,
-      unless required by applicable law (such as deliberate and grossly
-      negligent acts) or agreed to in writing, shall any Contributor be
-      liable to You for damages, including any direct, indirect, special,
-      incidental, or consequential damages of any character arising as a
-      result of this License or out of the use or inability to use the
-      Work (including but not limited to damages for loss of goodwill,
-      work stoppage, computer failure or malfunction, or any and all
-      other commercial damages or losses), even if such Contributor
-      has been advised of the possibility of such damages.
-
-   9. Accepting Warranty or Additional Liability. While redistributing
-      the Work or Derivative Works thereof, You may choose to offer,
-      and charge a fee for, acceptance of support, warranty, indemnity,
-      or other liability obligations and/or rights consistent with this
-      License. However, in accepting such obligations, You may act only
-      on Your own behalf and on Your sole responsibility, not on behalf
-      of any other Contributor, and only if You agree to indemnify,
-      defend, and hold each Contributor harmless for any liability
-      incurred by, or claims asserted against, such Contributor by reason
-      of your accepting any such warranty or additional liability.
-
-   END OF TERMS AND CONDITIONS
-
-   APPENDIX: How to apply the Apache License to your work.
-
-      To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "[]"
-      replaced with your own identifying information. (Don't include
-      the brackets!)  The text should be enclosed in the appropriate
-      comment syntax for the file format. We also recommend that a
-      file or class name and description of purpose be included on the
-      same "printed page" as the copyright notice for easier
-      identification within third-party archives.
-
-   Copyright [yyyy] [name of copyright owner]
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
