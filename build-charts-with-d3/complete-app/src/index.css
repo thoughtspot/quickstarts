@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.content{
+	margin: 90px;
+}
+
+/* Styles for Interactive Radar Chart  */
+
+.interactive-radar-container .legende {
+	cursor: pointer;
+}
+.interactive-radar-container .recta {
+	opacity: 0.1;
+	cursor: pointer;
+}
+.interactive-radar-container .legend {
+	font-family: 'Futura', sans-serif;
+	fill: #333333;
+}
+.interactive-radar-container .tooltip {
+	fill: #333333;
+}
+.interactive-radar-container {
+	font-size: 12px;
+	font-weight: 300;
+	fill: #242424;
+	text-align: center;
+	cursor: default;
+	margin-left: 20px;
+	margin-top: 40px;
+	padding: 10px;
+}
+
+/* Styles for GaugeChart */
+
+.chart-gauge {
+   width: 400px;
+   margin: 100px auto 
+}
+.chart-gauge .chart-first {
+   fill: #9FBD35;
+}
+.chart-gauge .chart-second {
+   fill: #F2BA3A;
+}
+.chart-gauge .chart-third {
+   fill: #FB3033;
+}
+.chart-gauge .needle, .needle-center {
+   fill: #000000;
+}
+.chart-gauge .text {
+   color: "#112864";
+   font-size: 16px;
+}
+.chart-gauge svg {
+   font: 10px sans-serif;
+}
+
+/* Styles for Bubble US Map */
+
+.chart-map {
+   width: 100%;
+   margin: 10px auto; 
+}
+
+/* Word cloud Styles*/
+
+.word-cloud {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 10px auto; 
+}
