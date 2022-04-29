@@ -60,11 +60,6 @@ $ npm install antd
 Next, go ahead and open the `quickstarts/react-starter-app `in your favorite IDE. Throughout this tutorial, we will be using [VSCode](https://code.visualstudio.com/) to demonstrate, but feel free to use the one you prefer.
 
 Negative
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: Definition &darr;&darr; outside of definition list. Missing preceding term(s)? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 : If you are using VSCode and receive a syntax error message indicating that error types can only be used in TypeScript (.ts) files, please follow the steps listed [here](https://stackoverflow.com/questions/48859169/error-types-can-only-be-used-in-a-ts-file-visual-studio-code-using-ts-che). (and don’t forget to reload your IDE afterwards. 
 
 From within your IDE, open src/components/liveboard.js. This file is where we embed the Liveboard component. Currently, the page does very little beyond embedding the component. Let’s start by adding the required imports for both antd and to start listening for ThoughtSpot events. At the top of your file, import the following:
