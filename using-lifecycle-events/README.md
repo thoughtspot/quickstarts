@@ -171,7 +171,7 @@ With your Javascript console open, navigate to liveboards, and you should see th
 
 
 
-![alt_text](images/image1.gif "image_tooltip")
+![alt_text](images/spinner.gif "image_tooltip")
 
 
 
@@ -242,7 +242,7 @@ Just like before, let’s try out our changes. If your app is not already runnin
 
 
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/change-query.png "image_tooltip")
 
 
 
@@ -336,13 +336,13 @@ Save your changes, and check out all of your hard work. . If your app is not alr
 Once the results are rendered, hover over the pin button, or the icons to the left of the pin button. You will notice they are enabled, with context sensitive tooltips.
 
 
-![alt_text](images/image3.gif "image_tooltip")
+![alt_text](images/hostevents-enable.gif "image_tooltip")
 
 
 Now, tap the Disable actions button, and enter a search term. This time, you will see the actions are disabled with our disabled message replacing the previous contextual tooltips. 
 
 
-![alt_text](images/image4.gif "image_tooltip")
+![alt_text](images/hostevents-disable.gif "image_tooltip")
 
 
 
