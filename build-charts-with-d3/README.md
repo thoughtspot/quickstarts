@@ -215,7 +215,7 @@ If you want to test your query before writing code, the Developer REST Playgroun
 Log in your ThoughtSpot instance, tap **Develop > REST API Playground**, then tap **Try it out** in the REST API v1 Playground section. Once in the playground, tap** tspublic/v1**, then select **/tspublic/v1/searchdata **to display the endpoint’s parameters. Try adding your worksheet id and search term defined in the constants above., then tap **Try it out**.
 
 
-![alt_text](images/image1.png "image_tooltip")
+![alt_text](images/playground-test.png "image_tooltip")
 
 
 Positive
@@ -225,7 +225,7 @@ If successful, you will see the Response Body as a json payload. This is the dat
 
 
 
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/response-body.png "image_tooltip")
 
 
 Then, when we have the results, we configure the chart and map the data to it:
@@ -316,7 +316,7 @@ $ npm start
 Once your app starts, tap on the GaugeExample, and you should see a chart appear. Nice job!
 
 
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](images/no-style-gauge.png "image_tooltip")
 
 
 Our chart shows the number of sales for the top selling product, but it’s not that exciting. Let’s add a little color. Open src/index.css and replace the contents with the following css:
@@ -414,7 +414,7 @@ code {
 Save your changes, and check out the chart now. Much better!
 
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](images/styled-gauge.png "image_tooltip")
 
 
 
@@ -543,7 +543,7 @@ function App() {
 Save and run your application, this time tapping on the Bar Example link. 
 
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/bar-chart.png "image_tooltip")
 
 
 
