@@ -1,4 +1,4 @@
-#Configuration : Windows
+# Configuration : Windows
 Install Node and NPM via the [installer](https://nodejs.org/en/download/) and install it on your machine
 Confirm installation by typing the following in a terminal window.  (Full instructions [here](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/react-on-windows). These should be recent versions (npm v7.11+ and node v16.3+)
 * `node -v`
