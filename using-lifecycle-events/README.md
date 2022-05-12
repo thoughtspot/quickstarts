@@ -104,7 +104,7 @@ And change it to:
 
 ```
 <LiveboardEmbed frameParams={{height: "80vw"}}
-                   liveboardId={"d084c256-e284-4fc4-b80c-111cb606449a"}
+                   liveboardId={"YOUR-ID-HERE"}
                    ref={embedRef}
                    onLoad={onLoad}
                    onLiveboardRendered={onRendered}
