@@ -221,7 +221,7 @@ As you can see in the function above, HostEvent.Search takes a search Query para
 
 ## Call changeSearch
 
-All that is left to do is add some functionality for us to call the changeSearch function. For our example, let’s connect it to a button. Go ahead and add a button into the &lt;header> tag of App.jsx and save your changes.
+All that is left to do is add some functionality for us to call the changeSearch function. For our example, let’s connect it to a button. Go ahead and add a button into the &lt;header> tag  and save your changes.
 
 
 ```
