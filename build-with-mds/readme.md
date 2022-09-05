@@ -13,7 +13,6 @@ Duration: 5
 
 Today's businesses rely on the most up-to-data information to take advantage of market changes, understand trends, and grow. The modern data stack is critical to unlocking this data by using modern technologies  to store, transform, and visualize this data. During this tutorial, you will learn how to use some of the major components of the modern data stack to derive business insights using modern software development practices.
 
-[modern data stack diagram]
 
 The key technologies in the modern data stack you will use are:
 
