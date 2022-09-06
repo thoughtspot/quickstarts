@@ -299,7 +299,7 @@ Duration: 12
    As a best practice in SQL, you should separate logic that cleans up your data from logic that transform. We already have a good start with our table structure. dbt makes it extremely easy to extend this to further separate out any logic into separate models. We will create the following structure
 
 
-![dbt_dag](images/dbt_dag.png)
+![dbt_dag](images/dbt-dag.png)
 
 3. Create a new SQL file, `models/stg_customers.sql`, with the SQL from  `customers`  in our original query.
 
