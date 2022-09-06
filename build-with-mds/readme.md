@@ -157,8 +157,7 @@ Duration: 5
 
 4. You should now see a popup that says `Connect to dbt` that contains all of the associated objects created by Partner Connect. Click on the `Optional Grant` dropdown menu and add `Thoughtspot` in the text box. This will grant your new dbt user role access to the database. Once that’s entered, click `Connect`. This will create a dedicated dbt user, database, warehouse, and role for your dbt Cloud trial.
 
-5. ![partner-connect-thoughtspot](/Users/quintonwall/Library/Mobile Documents/com~apple~CloudDocs/Work/ThoughtSpot/tutorials/transforming-data-with-dbt/images/partner-connect-thoughtspot.png)
-
+5. ![partner-connect-thoughtspot](images/partner-connect-thoughtspot.png)
    
 
 6. When you see the popup that says `Your partner account has been created`, click on `Activate`.
@@ -180,14 +179,12 @@ Duration: 5
 Duration: 7
 
 1. Now that our dbt Cloud account is set up, let's make a few changes to the automated Snowflake connection to use the `THOUGHTSPOT` database. Once you are logged in, click the cog in the right hand corner, select `Account Settings`, then `Linked Account`s from the lefthand navigation. Finally, select `Partner Connect Trial`
-
-2. <img src="/Users/quintonwall/Library/Mobile Documents/com~apple~CloudDocs/Work/ThoughtSpot/tutorials/transforming-data-with-dbt/images/partner_connect.png" alt="partner_connect" style="zoom:50%;" />
+2. ![partner connect](images/partner_connect.png)
 
 3. Edit the configuration details and change the  schema to THOUGHTSPOT
 
-4. 
 
-5. let’s open up the IDE (Integrated Development Environment) and familiarize ourselves with some of the key product features. Click on the hamburger menu in the upper left hand corner of the screen and then click `Develop`.
+4. let’s open up the IDE (Integrated Development Environment) and familiarize ourselves with some of the key product features. Click on the hamburger menu in the upper left hand corner of the screen and then click `Develop`.
 
    [![Hamburger Menu](https://github.com/Snowflake-Labs/sfquickstarts/raw/master/site/sfguides/src/accelerating_data_teams_with_snowflake_and_dbt_cloud_hands_on_lab/assets/dbt_Cloud_hamburger_menu.png)](https://github.com/Snowflake-Labs/sfquickstarts/blob/master/site/sfguides/src/accelerating_data_teams_with_snowflake_and_dbt_cloud_hands_on_lab/assets/dbt_Cloud_hamburger_menu.png)
 
@@ -279,11 +276,13 @@ select * from final
 
 Save your changes, and enter `dbt run` in the command line prompt at the bottom of the dbt browser window and tap `enter`.
 
-<img src="/Users/quintonwall/Library/Mobile Documents/com~apple~CloudDocs/Work/ThoughtSpot/tutorials/transforming-data-with-dbt/images/dbt_run.png" alt="dbt_run" style="zoom:50%;" />
+
+
+![dbt_run](images/dbt_run.png)
 
 If everything is successful, you should see a pass message.
 
-![dbt_pass](/Users/quintonwall/Library/Mobile Documents/com~apple~CloudDocs/Work/ThoughtSpot/tutorials/transforming-data-with-dbt/images/dbt_pass.png)
+![dbt_pass](images/dbt_pass.png)
 
 
 
@@ -300,7 +299,7 @@ Duration: 12
    As a best practice in SQL, you should separate logic that cleans up your data from logic that transform. We already have a good start with our table structure. dbt makes it extremely easy to extend this to further separate out any logic into separate models. We will create the following structure
 
 
-<img src="/Users/quintonwall/Library/Mobile Documents/com~apple~CloudDocs/Work/ThoughtSpot/tutorials/transforming-data-with-dbt/images/dbt-dag.png" alt="dbt-dag" style="zoom:50%;" />
+![dbt_dag](images/dbt_dag.png)
 
 3. Create a new SQL file, `models/stg_customers.sql`, with the SQL from  `customers`  in our original query.
 
@@ -381,7 +380,7 @@ Duration: 12
 
    If everything looks right, your Lineage view after saving `models/customers.sql` should look like this. 
 
-   <img src="/Users/quintonwall/Library/Mobile Documents/com~apple~CloudDocs/Work/ThoughtSpot/tutorials/transforming-data-with-dbt/images/lineage_graph.png" alt="lineage_graph" style="zoom:50%;" />
+   ![dbt_lineage](images/lineage_graph.png)
 
    All that is left to do is build your models using `dbt run`. This time, when you performed a `dbt run`, separate views/tables were created for `stg_customers`, `stg_orders` and `customers`. dbt inferred the order to run these models. Because `customers` depends on `stg_customers` and `stg_orders`, dbt builds `customers` last. You do not need to explicitly define these dependencies.
 
@@ -437,7 +436,7 @@ models:
 
 3. Run `dbt test`, and confirm that all your tests passed.
 
-   ![tests-passed](/Users/quintonwall/Library/Mobile Documents/com~apple~CloudDocs/Work/ThoughtSpot/tutorials/transforming-data-with-dbt/images/tests-passed.png)
+   ![tests-passed](images/tests-passed.png)
 
 ### Create Tests 
 
@@ -494,7 +493,8 @@ Adding [documentation](https://docs.getdbt.com/docs/building-a-dbt-project/docum
 
 3. Now that you project is complete, make sure that everything is saved and commit it to your repo by tapping the commit button,  providing a commit message, then choosing `merge to main` once the commit is successful.
 
-   <img src="/Users/quintonwall/Library/Mobile Documents/com~apple~CloudDocs/Work/ThoughtSpot/tutorials/transforming-data-with-dbt/images/final_commit.png" alt="final_commit" style="zoom:50%;" />
+   
+   ![final commit](images/final_commit.png)
 
 
 
@@ -516,13 +516,13 @@ All that is left is to deploy your job/project.
 
 5. Tap settings to confirm generate docs on run is checked.
 
-   <img src="/Users/quintonwall/Library/Mobile Documents/com~apple~CloudDocs/Work/ThoughtSpot/tutorials/transforming-data-with-dbt/images/gendocs.png" alt="gendocs" style="zoom:50%;" />
+   ![dbt_gendocs](images/gendocs.png)
 
 6. Tap `Partner Connect Trial Job` from the breadcrumb menu to return to the job run history page.
 
 7. Tap Run now. In about a minute you should see that your job has run successfully. Our dbt project is ready to go!
 
-   <img src="/Users/quintonwall/Library/Mobile Documents/com~apple~CloudDocs/Work/ThoughtSpot/tutorials/transforming-data-with-dbt/images/job_success.png" alt="job_success" style="zoom:50%;" />
+   ![dbt_success](images/job_success.png)
 
 
 
@@ -581,18 +581,19 @@ Within the wizard, select `ts+dbt_tutorial` as the data warehouse.  This will au
 | Account Id | Within dbt Cloud, make sure you are in the project you created earlier in this tutorial, then get account ID from the URL as shown below |
 | Project Id | You can grab the project id from same URL as account id      |
 
-<img src="images/dbtids.png" alt="dbtids" style="zoom:50%;" />
+
+![dbt_ids](images/dbtids.png)
 
 Once you have entered all the fields, tap `next`. You will be presented with a list of folders to import. Your project has just one folder, creatively named `models` which contains your 3 models. Select that folder and tap `Next`. 
 
 Review the dbt tables you want. In our tutorial, we want them all, so you can tap `Finish`.
 
-<img src="images/review_tables.png" alt="review_tables" style="zoom:50%;" />
+![review tables](images/review_tables.png)
 
 The wizard will now create tables and worksheets (logical views of data) within ThoughtSpot based on your models. If everything is successful, you will see two worksheets that are ready to search on. The great this is that all your modeling work to create the Customers table is applied to your worksheet. Tap Exit to finish the wizard.
 
-<img src="images/worksheets.png" alt="worksheets" style="zoom:50%;" />
 
+![worksheets](images/worksheets.png)
 
 
 ### Add Synonyms
