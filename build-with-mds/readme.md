@@ -159,7 +159,6 @@ Duration: 5
 
 5. ![partner-connect-thoughtspot](images/partner-connect-thoughtspot.png)
    
-
 6. When you see the popup that says `Your partner account has been created`, click on `Activate`.
 
 7. You should be redirected to a dbt Cloud registration page. Fill out the form and make sure to save the password somewhere for login in the future.
@@ -290,31 +289,25 @@ If everything is successful, you should see a pass message.
 
 Duration: 12
 
-1. To get started with development for our project, we’ll need to create a new git branch for our work. Clicking on the green `create new branch` button in the upper left hand corner of the screen will bring up a window to name your branch. We’ll call our branch `thoughtspot-tutorial`. After entering in the name click `Submit`.
-
-   [![Create New Branch](https://github.com/Snowflake-Labs/sfquickstarts/raw/master/site/sfguides/src/accelerating_data_teams_with_snowflake_and_dbt_cloud_hands_on_lab/assets/dbt_Cloud_create_new_branch_button.png)](https://github.com/Snowflake-Labs/sfquickstarts/blob/master/site/sfguides/src/accelerating_data_teams_with_snowflake_and_dbt_cloud_hands_on_lab/assets/dbt_Cloud_create_new_branch_button.png)
-
-   
-
-   As a best practice in SQL, you should separate logic that cleans up your data from logic that transform. We already have a good start with our table structure. dbt makes it extremely easy to extend this to further separate out any logic into separate models. We will create the following structure
+1. As a best practice in SQL, you should separate logic that cleans up your data from logic that transform. We already have a good start with our table structure. dbt makes it extremely easy to extend this to further separate out any logic into separate models. We will create the following structure
 
 
 ![dbt_dag](images/dbt-dag.png)
 
-3. Create a new SQL file, `models/stg_customers.sql`, with the SQL from  `customers`  in our original query.
+2. Create a new SQL file, `models/stg_customers.sql`, with the SQL from  `customers`  in our original query.
 
-   ```sql
-   select
-       id as customer_id,
-       first_name,
-       last_name
-   
-   from thoughtspot.dbtqs.customers
-   ```
+```sql
+select
+    id as customer_id,
+    first_name,
+    last_name
 
-   
+from thoughtspot.dbtqs.customers
+```
 
-4. Create a second new SQL file, `models/stg_orders.sql`, with the SQL from  `orders` in our original query.
+
+
+3. Create a second new SQL file, `models/stg_orders.sql`, with the SQL from  `orders` in our original query.
 
    ```sql
    select
@@ -326,7 +319,7 @@ Duration: 12
    from thoughtspot.dbtqs.orders
    ```
 
-5. Then, edit models/customers.sql to include these models.
+4. Then, edit models/customers.sql to include these models.
 
    ```sql
    with customers as (
@@ -376,7 +369,7 @@ Duration: 12
    
    ```
 
-6. Build your models
+5. Build your models
 
    If everything looks right, your Lineage view after saving `models/customers.sql` should look like this. 
 
@@ -438,7 +431,7 @@ models:
 
    ![tests-passed](images/tests-passed.png)
 
-### Create Tests 
+### Create Tests & Documentation
 
 Adding [documentation](https://docs.getdbt.com/docs/building-a-dbt-project/documentation) to your project allows you to describe your models in rich detail, and share that information with your team. Here, we're going to add some basic documentation to our project.
 
@@ -489,9 +482,9 @@ Adding [documentation](https://docs.getdbt.com/docs/building-a-dbt-project/docum
    
    ```
 
-2. Run `dbt docs generate` to generate the documentation for your project. dbt introspects your project and your warehouse to generate a json file with rich documentation about your project. 
+2. Run `dbt docs generate` to generate the documentation for your project. dbt introspects your project and your warehouse a series of json files with metadata about your project, including lineage. Once generated, tap the `Documentation` tab to see your generated docs alongside those of the dbt platform.  
 
-3. Now that you project is complete, make sure that everything is saved and commit it to your repo by tapping the commit button,  providing a commit message, then choosing `merge to main` once the commit is successful.
+3. Now that your project is complete, make sure that everything is saved and commit it to your repo by tapping the commit button,  providing a commit message, then choosing `merge to main` once the commit is successful.
 
    
    ![final commit](images/final_commit.png)
@@ -522,9 +515,8 @@ All that is left is to deploy your job/project.
 
 7. Tap Run now. In about a minute you should see that your job has run successfully. Our dbt project is ready to go!
 
-   ![dbt_success](images/job_success.png)
 
-
+![job_success](images/job_success.png)
 
 ## Get started with ThoughtSpot
 
@@ -614,7 +606,7 @@ Let's go ahead an start searching our data. Tap `Search Data` from the top menu 
 
 <img src="images/select_worksheet.png" alt="select_worksheet" style="zoom:50%;" />
 
-You will now be in the ThoughtSpot search interface. Go ahead and enter the following search term in the search box: ,, Surname, NUMBER_OF_ORDERS monthly and tap Go. This will create a line chart which isn't exact what we want. Tap the chart icon and select Stacked Column,  You will now see a chart showing March was a big month in sales. Hover over the colored blocks to see how many orders a customer made in that month. (Customer surnames are a single letter in the sample data we loaded into Snowflake). You might have noticed that we used the Surname synonym too. Nice job!
+You will now be in the ThoughtSpot search interface. Go ahead and enter the following search term in the search box: `Surname, NUMBER_OF_ORDERS monthly` and tap `Go`. This will create a line chart which isn't exact what we want. Tap the chart icon and select `Stacked Column`.  You will now see a chart showing March was a big month in sales. Hover over the colored blocks to see how many orders a customer made in that month. (Customer surnames are a single letter in the sample data we loaded into Snowflake). You might have noticed that we used the Surname synonym too. Nice job!
 
 
 
