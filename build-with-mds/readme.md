@@ -207,7 +207,25 @@ Duration: 7
 
    [![Example Models File Tree](https://github.com/Snowflake-Labs/sfquickstarts/raw/master/site/sfguides/src/accelerating_data_teams_with_snowflake_and_dbt_cloud_hands_on_lab/assets/dbt_Cloud_example_models_file_tree.png)](https://github.com/Snowflake-Labs/sfquickstarts/blob/master/site/sfguides/src/accelerating_data_teams_with_snowflake_and_dbt_cloud_hands_on_lab/assets/dbt_Cloud_example_models_file_tree.png)
 
-   
+### Create Sources 
+
+To add sources to your project:
+
+1. Create a new YAML file in the `models` directory, named `models/sources.yml`
+2. Add the following contents to the file:
+
+```yaml
+version: 2
+
+sources:
+  - name: dbtqs_raw
+    database: thoughtspot
+    schema: dbtqs
+    tables:
+      - name: customers
+      - name: orders
+
+```   
 
 ## Build your first model
 
@@ -223,7 +241,7 @@ with customers as (
         first_name,
         last_name
 
-    from thoughtspot.dbtqs.customers
+    from {{ source('dbtqs_raw', 'customers') }}
 
 ),
 
@@ -235,7 +253,7 @@ orders as (
         order_date,
         status
 
-    from thoughtspot.dbtqs.orders
+    from {{ source('dbtqs_raw', 'orders') }}
 
 ),
 
@@ -302,7 +320,7 @@ select
     first_name,
     last_name
 
-from thoughtspot.dbtqs.customers
+from {{ source('dbtqs_raw', 'customers') }}
 ```
 
 
@@ -316,7 +334,7 @@ from thoughtspot.dbtqs.customers
        order_date,
        status
    
-   from thoughtspot.dbtqs.orders
+   from {{ source('dbtqs_raw', 'orders') }}
    ```
 
 4. Then, edit models/customers.sql to include these models.
