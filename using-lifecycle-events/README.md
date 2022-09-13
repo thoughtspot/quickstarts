@@ -18,7 +18,7 @@ $ npm start
 ```
 
 
-Once the app is up and running, navigate to [http://localhost:8000](http://localhost:8000). If this is the first time loading the app, you will have to log into ThoughtSpot to see data. If you don’t already have an account, go ahead and sign up for [a 30-day free trial](https://www.thoughtspot.com/trial?utm=tutorial-lifecycleeventsl). Once you received your credentials via the email verification, you can continue.
+Once the app is up and running, navigate to [http://localhost:8000](http://localhost:8000). If this is the first time loading the app, you will have to log into ThoughtSpot to see data. If you don’t already have an account, go ahead and sign up for [a 30-day free trial](https://www.thoughtspot.com/trial?tsref=dev-qs-lifecycle). Once you received your credentials via the email verification, you can continue.
 
 Once logged in, you will see the starter app with a hamburger menu on the left hand side. We will use the Liveboard and Search pages to add lifecycle events. Feel free to tap on each and get an idea of what the embedded components look and function like. 
 
