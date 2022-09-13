@@ -30,7 +30,7 @@ Let's get started.
 
 * A [dbt Cloud account](https://www.getdbt.com/signup/) 
 
-* A [ThoughtSpot](https://www.thoughtspot.com/trial?tsref=trialtse) account
+* A [ThoughtSpot](https://www.thoughtspot.com/trial?tsref=dev-qs-dbt) account
 
 ### What You'll Learn
 
