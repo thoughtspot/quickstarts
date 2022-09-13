@@ -134,7 +134,7 @@ Once your data has loaded, tap Query Data. This will take you to a worksheet whe
 
 ## Sign up for a ThoughtSpot Free Trial
 
-Next, let’s sign-up for a ThoughtSpot Free Trial. Head over to the [sign-up page](https://www.thoughtspot.com/trial?utm=snowtstutorial) and complete the required fields. Select Snowflake as your Cloud Data Warehouse provider. This is not necessary, but does help us better understand trends in customer data usage. In a few minutes you should receive an activation email. Follow the instructions included to finish creating your Trial account.
+Next, let’s sign-up for a ThoughtSpot Free Trial. Head over to the [sign-up page](https://www.thoughtspot.com/trial?tsref=dev-qs-snowflake) and complete the required fields. Select Snowflake as your Cloud Data Warehouse provider. This is not necessary, but does help us better understand trends in customer data usage. In a few minutes you should receive an activation email. Follow the instructions included to finish creating your Trial account.
 
 
 # Create A Connection
