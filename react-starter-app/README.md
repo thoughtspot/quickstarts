@@ -13,7 +13,7 @@ If you want to see it in action, check out the [Code Sandbox version](https://co
 ## How to use
 
 ### Sign up for Free Trial account
-You will need a ThoughtSpot Free Trial account [here](https://www.thoughtspot.com/trial). 
+You will need a ThoughtSpot Free Trial account [here](https://www.thoughtspot.com/trial?tsref=dev-qs-react). 
 
 ### Clone Github Repo
 Clone the ThoughtSpot Quickstarts repo.
