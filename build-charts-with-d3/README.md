@@ -9,7 +9,7 @@ ThoughtSpot Everywhere offers different options for developers to embed analytic
 
 Duration: 0:15:00
 
-If you don’t already have a ThoughtSpot account, go ahead and sign up for [a 30-day free trial](https://www.thoughtspot.com/trial?utm=tutorial-lifecycleeventsl). Once you received your credentials via the email verification, you can continue.
+If you don’t already have a ThoughtSpot account, go ahead and sign up for [a 30-day free trial](https://www.thoughtspot.com/trial?dev-qs-lifecycle). Once you received your credentials via the email verification, you can continue.
 
 This tutorial will build a ReactJS webapp to embed the analytics. Make sure that you have a recent version of node.js and npm installed. You can test which version you have by executing the following command in a terminal window:
 
