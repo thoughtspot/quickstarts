@@ -12,7 +12,8 @@ import {
   init,
  } from "@thoughtspot/visual-embed-sdk";
  
- const TSURL = "https://try.thoughtspot.cloud";
+// will be either my1 or my2. 
+ const TSURL = "https://my1.thoughtspot.cloud";
 
 
 function App() {
